@@ -1,0 +1,27 @@
+ Algorithm problem1_solution1
+
+       const tab1:array(4):=[3,1,7,9]; 
+        const tab2:array(4):=[2,4,1,9,3];
+        var sum:integer:=0;
+    BEGIN
+
+        for(var i FROM 0 TO tab1.length-1 STEP 1) DO
+            var j=0;
+            while(j <tab2.length && tab1[i]<>tab2[j]) DO 
+                j++;
+
+            END
+            if(tab1[i]<>tab2[j]) sum+:=tab1[i];
+          
+        END FOR
+        for(var i FROM 0 TO tab2.length -1 STEP 1)DO 
+            var j=0;
+            while(j <tab1.length && tab2[i]<>tab1[j]) DO
+                j++;
+
+            END
+            if(tab2[i]!=tab1[j]) sum+:=tab2[i];
+          
+        END
+   return sum;
+   END

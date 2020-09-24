@@ -1,0 +1,26 @@
+      Algorithm Problem2_s1
+
+        const tab1:array_of_float[4]:=[12,13,6,10]; 
+        const tab2:array_of_float[4]:=[13,10,16,15];
+        var sum:=0;
+     BEGIN
+        for(var i FROM  TO tab1.length-1 STEP 1)DO 
+            var j:=0;
+            while(j <tab2.length && tab1[i]!=tab2[j])DO
+                j++;
+
+            END
+            if(tab1[i]=tab2[j]) sum+:=tab1[i];
+          
+        END FOR
+        for(var i FROM 0  TO tab2.length-1 STEP 1) DO
+            var j:=0;
+            while(j <tab1.length && tab2[i]!=tab1[j]) DO
+                j++;
+
+            ENd
+            if(tab2[i]=tab1[j]) sum+:=tab2[i];
+          
+        END
+        return sum;
+    END

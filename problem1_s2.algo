@@ -1,0 +1,43 @@
+Algorithm hashAddition 
+var hash1, hash2 : Hash-table<integer,integer>
+BEGIN 
+hash1.insert(0,3);
+hash1.insert(1,1); 
+hash1.insert(2,7); 
+hash1.insert(3,9); 
+hash2.insert(0,2); 
+hash2.insert(1,4); 
+hash2.insert(2,1); 
+hash2.insert(3,9); 
+hash2.insert(4,3); 
+write(h1);
+write(h2);
+
+     FOR i FROM 0  TO tab1.length STEP 1) DO
+            var j:=0;
+            while (j <hash2.length && hash.lookup(i)!=has2.lookup(j)
+            BEGIN
+                j++;
+
+            END WHILE
+            if(hash1.lookup(i)!=hash2.lookup(j)) 
+            BEGIN IF
+            sum+:=hash1.lookup(i);
+            END IF
+          
+        END
+        for( i FROM 0 TO hash2.length STEP 1) DO
+            var j:=0;
+            while(j <hash1.length && hash2.lookup(i)!=hash1.lookup(j)
+            BEGIN
+                j++;
+
+            ENF 
+            if(hash2.lookup(i)!=hash1.lookup(j) 
+            BEGIN
+            sum+=hash2.lookup(i);
+            END 
+        END
+          
+        REturn sum;
+END
